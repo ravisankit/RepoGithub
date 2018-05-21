@@ -102,6 +102,7 @@ public class ItemFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         network = NetworkHelper.hasNetworkAccess(getContext());
+        PAGE_SIZE = 20;
         Bundle bundle = getArguments();
         if(bundle != null){
 
